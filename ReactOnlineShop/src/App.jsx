@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <Outlet context={[productList]} />
     </>
   );
 }
