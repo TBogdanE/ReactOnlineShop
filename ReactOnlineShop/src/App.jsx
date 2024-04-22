@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import getItems from "./modules/fakeStoreApi";
-
 import "./styles/App.css";
+import Header from "./components/Header";
 
 function App() {
   const [productList, setData] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -17,7 +18,12 @@ function App() {
 
     fetchData();
   }, []);
-  return;
+
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
