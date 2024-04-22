@@ -1,36 +1,31 @@
+import { Car } from "../modules/Classes";
 import "../styles/ProductCard.css";
-export default function CreateCard({
-  id,
-  img,
-  name,
-  model,
-  engine,
-  horsepower,
-  transmision,
-  price,
-}) {
-  console.log("data", id);
+export default function CreateCard({ obj, cart, updateCart }) {
   return (
     <>
       <div className="card">
-        <img id="image" className="text" src={img} />
+        <img id="image" className="text" src={obj.image} />
         <div id="name" className="text">
-          {name}
+          {obj.name}
         </div>
         <div id="model" className="text">
-          {model}
+          {obj.model}
         </div>
         <div id="engine" className="text">
-          {engine}
+          {obj.engine}
         </div>
         <div id="horsepower" className="text">
-          {horsepower} hp
+          {obj.horsepower} hp
         </div>
         <div id="transmission" className="text">
-          {transmision}
+          {obj.transmision}
         </div>
-        <button id="buy" className="text">
-          {price}
+        <button
+          id="buy"
+          className="text"
+          onClick={() => obj.buttonPress(cart, updateCart)}
+        >
+          {obj.price}
         </button>
       </div>
     </>
