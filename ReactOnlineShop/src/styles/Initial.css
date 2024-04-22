@@ -1,0 +1,7 @@
+#product-view {
+  grid-area: 7 / 3 / 23 / 34;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}

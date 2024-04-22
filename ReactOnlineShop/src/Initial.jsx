@@ -1,3 +1,8 @@
+import "./styles/Initial.css";
 export default function Initial() {
-  return <div></div>;
+  return (
+    <>
+      <div id="product-view"></div>
+    </>
+  );
 }
