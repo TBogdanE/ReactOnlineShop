@@ -1,0 +1,78 @@
+.cart-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(45, 118, 151);
+  height: 4em;
+  margin: 0.5em;
+  border: 0.1em solid rgb(45, 118, 151);
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.left-sct {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+.middle-sct {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10%;
+}
+
+.right-sct {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10%;
+}
+
+.image-box {
+  width: 3em;
+  height: 3em;
+  margin: 1em;
+
+  border: 0.1em solid rgb(45, 118, 151);
+  border-radius: 5px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.name {
+  margin: 1em;
+}
+
+.mode {
+  margin: 1em;
+}
+
+.price {
+  margin: 1em;
+}
+
+.remove-cart {
+  margin: 1em;
+  background-color: transparent;
+  padding: 0.5em 1em 0.5em 1em;
+  border: 0.18em solid rgb(45, 118, 151);
+  color: rgb(45, 118, 151);
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.remove-cart:hover {
+  background-color: rgb(45, 118, 151);
+  color: white;
+}
