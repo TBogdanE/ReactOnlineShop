@@ -19,7 +19,7 @@ header {
 }
 
 .menu-btn {
-  color: rgb(68, 68, 68);
+  color: rgb(45, 118, 151);
   font-size: 1.3em;
   padding: 0 1em 0 1em;
   text-decoration: none;
@@ -27,7 +27,7 @@ header {
 }
 
 .menu-btn:hover {
-  color: rgb(45, 118, 151);
+  color: rgb(0, 92, 131);
   text-decoration: underline;
 }
 

@@ -1,7 +1,8 @@
 #product-view {
-  grid-area: 7 / 3 / 23 / 34;
-  display: grid;
-  justify-content: center;
+  grid-area: 7 / 2 / 23 / 35;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  background-color: red;
+  border: 0.1em solid rgb(45, 118, 151);
+  border-radius: 2em;
 }

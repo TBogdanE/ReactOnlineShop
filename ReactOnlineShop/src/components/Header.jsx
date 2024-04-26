@@ -16,7 +16,7 @@ export default function Header() {
           Home
         </Link>
         <Link
-          to="checkout"
+          to="/checkout"
           className={activeBtn === "checkout" ? "menu-btn-active " : "menu-btn"}
           onClick={() => setActive("checkout")}
         >

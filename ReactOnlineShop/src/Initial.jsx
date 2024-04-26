@@ -4,17 +4,19 @@ import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 
 export default function Initial() {
+  const [productData, setProductData] = useState([]);
   const [productList, shoppingCart, updateCart] = useOutletContext();
 
   useEffect(() => {
     if (productList) {
-      updateCart(productList);
+      setProductData(productList);
     }
   }, [productList]);
   return (
     <>
+      <p>{productData.make}</p>
       <div id="product-view">
-        {productList.map((item) => {
+        {productData.map((item) => {
           return (
             <CreateCard
               obj={item}
