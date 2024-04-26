@@ -1,0 +1,24 @@
+#checkout-view {
+  grid-area: 6 / 3 / 30 / 33;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart-element {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+#empty-cart {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  color: rgb(45, 118, 151);
+  padding: 1em;
+}
